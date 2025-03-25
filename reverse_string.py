@@ -5,9 +5,10 @@ def main():
 
 
 def reversed_str(word):
-    for i in range(len(word) - 1, -1, -1):
-        print(word[i], end="")
-    print()
+    reversed_str = ""
+    for char in word:
+        reversed_str = char + reversed_str
+    print(reversed_str)
 
 
 main()
