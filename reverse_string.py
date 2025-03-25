@@ -1,14 +1,9 @@
 def main():
     word = input("Input: ")
-    print("Output: ", end="")
-    reversed_str(word)
-
-
-def reversed_str(word):
-    reversed_str = ""
-    for char in word:
-        reversed_str = char + reversed_str
-    print(reversed_str)
+    print("Output: ", "".join(reversed(word)))
 
 
 main()
+
+# "".join - Joins each character from the iterator into single string
+# reversed(word) - iterator that goes through word backwards, without creating a new string immediately
